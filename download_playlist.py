@@ -24,8 +24,9 @@ for video_url in playlist.video_urls:
     # Obtiene el título del video
     video_title = yt.title
     
-    # Genera un string aleatorio de 3 caracteres
+    # Genera un string aleatorio de 3 caracteres para adicionar el nombre y evitar sobreescritura
     random_string = ''.join(random.choice(caracteres_permitidos) for _ in range(3))
+    
     #video_stream = yt.streams.get_highest_resolution()
     video_stream = yt.streams.filter(only_audio=True,file_extension="mp4").first()
     
