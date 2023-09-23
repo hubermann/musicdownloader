@@ -5,6 +5,8 @@
  
 [pytube](https://pytube.io/en/latest/)
 
+## Install library 
+
 Install the pytube library using pip or you package manager desired.  (optional moviepy) 
 
 `python3 -m pip install pytube moviepy`
@@ -18,6 +20,9 @@ Move inside the pytube folder folder
 
 ..and proceed to install
 `python3 -m pip install .`
+
+
+##Usage
 
 After the installation can use the scripts:
 
