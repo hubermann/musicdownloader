@@ -26,8 +26,8 @@ Move inside the pytube folder folder
 
 After the installation can use the scripts:
 
-*Inside the download_single.py script, modify the lin8 to add your url desired*
+*Inside the download_single.py script, modify the line 8 to add your url desired*
 
-*Inside the download_playlist.py script, modify the lin14 to add the playlist url desired*
+*Inside the download_playlist.py script, modify the line 14 to add the playlist url desired*
 
 :*

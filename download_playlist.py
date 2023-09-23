@@ -28,10 +28,10 @@ for video_url in playlist.video_urls:
     random_string = ''.join(random.choice(caracteres_permitidos) for _ in range(3))
     
     #video_stream = yt.streams.get_highest_resolution()
-    video_stream = yt.streams.filter(only_audio=True,file_extension="mp4").first()
-    
-    print(video_stream)
-    video_stream.download(output_path="music", filename=f"{video_title}___{random_string}.mp4")
+    audio_stream = yt.streams.filter(only_audio=True,file_extension="mp4").last()
 
+    audio_stream.download(output_path="music", filename=f"{video_title}___{random_string}.mp4")
+
+    print(audio_stream)
     # Imprime el nombre del video descargado
     print(f"Descargando: {video_title}")

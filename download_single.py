@@ -11,12 +11,10 @@ video_url = "https://www.youtube.com/watch?v=7nJRGARveVc"
 yt = YouTube(video_url)
 
 # Selecciona la mejor corriente de audio (en formato MP4)
-audio_stream = yt.streams.filter(only_audio=True).first()
-
-
+audio_stream = yt.streams.filter(only_audio=True).last()
 
 # Imprime el título del video
 print("Título del video:", yt.title)
 
 
-audio_stream.download(output_path="music", filename=yt.title+".mp3")
+audio_stream.download(output_path="music", filename=yt.title+".mp4")
