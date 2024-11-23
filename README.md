@@ -1,13 +1,12 @@
 # musicdownloader
 
+## Required library
 
-## Required library 
- 
 [pytube](https://pytube.io/en/latest/)
 
-## Install library 
+## Install library
 
-Install the pytube library using pip or you package manager desired.  (optional moviepy) 
+Install the pytube library using pip or you package manager desired. (optional moviepy)
 
 `python3 -m pip install pytube moviepy`
 
@@ -21,13 +20,15 @@ Move inside the pytube folder folder
 ..and proceed to install
 `python3 -m pip install .`
 
+down.py requiere
+`brew install ffmpeg`
 
 ## Usage
 
 After the installation can use the scripts:
 
-*Inside the download_single.py script, modify the line 8 to add your url desired*
+_Inside the download_single.py script, modify the line 8 to add your url desired_
 
-*Inside the download_playlist.py script, modify the line 14 to add the playlist url desired*
+_Inside the download_playlist.py script, modify the line 14 to add the playlist url desired_
 
-:*
+:\*
